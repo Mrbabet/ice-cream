@@ -50,6 +50,9 @@ header {
 .container {
   padding-inline: 20px;
 }
+.section {
+  padding-top: 60px;
+}
 header .container {
   display: flex;
   justify-content: space-between;
@@ -108,6 +111,77 @@ header .container {
 .bar:after {
   transform: translateY(5px);
 }
+.hero {
+  background-color: var(--color-bg-primary);
+}
 h1 {
   font-family: "Seymour One", sans-serif;
+  color: var(--secondary-text-color);
+  font-size: 26px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.04px;
+  text-transform: uppercase;
+  max-width: 247px;
+  padding-top: 50px;
+}
+h1 span {
+  font-size: 34px;
+  font-style: normal;
+  line-height: 96.5%;
+  text-transform: uppercase;
+}
+.hero-usable {
+  margin-top: 32px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.products-button {
+  background-color: transparent;
+  border: 2px solid var(--default-color);
+  border-radius: 8px;
+  width: 108px;
+  height: 38px;
+  color: var(--black);
+  font-size: 12px;
+  text-align: center;
+}
+.hero-link {
+  color: var(--default-link-color);
+}
+.hero img {
+  width: 177px;
+  height: 217px;
+  margin: 0 auto;
+}
+.section-products {
+  height: 100vh;
+  background-image: url("/images/Backgroud_mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -250px -75px;
+}
+.section-products h2 {
+  font-family: "Seymour One", sans-serif;
+  display: block;
+  color: #131313;
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+.section-products h2 span {
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
 }
