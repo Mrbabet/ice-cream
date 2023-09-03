@@ -22,6 +22,9 @@
   --disabledlink--color: #ababab;
 
   --focus-color: #fcfcfc;
+
+  --fancy-text: "Seymour One", sans-serif;
+  --normal-text: "Montserrat", sans-serif;
 }
 h1,
 h2,
@@ -43,15 +46,19 @@ ul {
   margin: 0;
 }
 body {
+  font-family: var(--normal-text);
 }
 header {
   background-color: var(--color-bg-primary);
 }
 .container {
+  width: 100%;
+  max-width: 480px;
   padding-inline: 20px;
+  margin: 0 auto;
 }
 .section {
-  padding-top: 60px;
+  padding-block: 60px;
 }
 header .container {
   display: flex;
@@ -70,7 +77,7 @@ header .container {
 }
 .logo-text {
   text-align: center;
-  font-family: "Seymour One", sans-serif;
+  font-family: var(--fancy-text);
   font-size: 17.687px;
   font-style: normal;
   font-weight: 400;
@@ -157,11 +164,10 @@ h1 span {
   margin: 0 auto;
 }
 .section-products {
-  height: 100vh;
   background-image: url("/images/Backgroud_mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: -250px -75px;
+  background-position: center center;
 }
 .section-products h2 {
   font-family: "Seymour One", sans-serif;
@@ -176,7 +182,7 @@ h1 span {
   text-transform: uppercase;
 }
 .section-products h2 span {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
   display: block;
   text-align: center;
   font-size: 18px;
@@ -184,4 +190,161 @@ h1 span {
   font-weight: 800;
   line-height: normal;
   text-transform: uppercase;
+}
+.products-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.products-container .product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 160px;
+  width: 100%;
+  max-width: 320px;
+  height: 420px;
+  border-radius: 24px;
+  position: relative;
+  padding-inline: 40px;
+  padding-bottom: 16px;
+}
+.products-container .product img {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 200px;
+}
+.products-container .product .image-mask {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: -89px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+
+.products-container .product h3 {
+  margin-top: 130px;
+  color: #131313;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+.products-container .product p {
+  margin-top: 40px;
+  color: #131313;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 176%;
+  letter-spacing: 0.56px;
+}
+.products-container .product svg {
+  width: 40px;
+  height: 16px;
+
+  margin-top: auto;
+}
+
+.products-container .product:nth-of-type(1) {
+  background-color: var(--color-greenish);
+}
+.products-container .product:nth-of-type(2) {
+  background-color: var(--color-yellowish);
+}
+.products-container .product:nth-of-type(3) {
+  background-color: var(--color-orangeish);
+}
+.products-container .product:nth-of-type(1) .image-mask {
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7) 0%,
+      rgba(156, 190, 143, 0.7) 100%
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.342193126678467px 20.033222198486328px
+    rgba(10, 136, 23, 0.25);
+}
+.products-container .product:nth-of-type(2) .image-mask {
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7) 0%,
+      rgba(248, 210, 78, 0.7) 100%
+    ),
+    #d9d9d9;
+
+  box-shadow: 0px 5.403973579406738px 20.26490020751953px
+    rgba(153, 114, 23, 0.25);
+}
+.products-container .product:nth-of-type(3) .image-mask {
+  background: linear-gradient(
+      0deg,
+      rgba(213, 117, 63, 0.7) 0%,
+      rgba(213, 117, 63, 0.7) 100%
+    ),
+    #d9d9d9;
+
+  box-shadow: 0px 5.413332939147949px 20.299999237060547px rgba(0, 0, 0, 0.25);
+}
+.section-how-its-made {
+  background-color: var(--color-bg-primary);
+}
+.section-how-its-made h2 {
+  font-family: "Seymour One", sans-serif;
+  display: block;
+  color: var(--secondary-text-color);
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+.section-how-its-made h2 span {
+  font-family: "Montserrat", sans-serif;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.section-how-its-made .image-mask {
+  display: block;
+  margin: 0 auto;
+  width: 278px;
+  height: 278px;
+  margin-top: 32px;
+  border-radius: 50%;
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7) 0%,
+      rgba(248, 210, 78, 0.7) 100%
+    ),
+    #d9d9d9;
+  box-shadow: 0px 4.48583px 16.82185px 0px rgba(153, 114, 23, 0.25);
+}
+.section-how-its-made img {
+  width: 278px;
+  height: 278px;
+  padding-bottom: 22px;
+  transform: translateY(22px);
+}
+.section-how-its-made p {
+  color: var(--secondary-text-color);
+  font-family: var(--normal-text);
+  margin-top: 40px;
+  text-align: center;
 }
