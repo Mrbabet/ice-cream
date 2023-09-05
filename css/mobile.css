@@ -1,0 +1,32 @@
+@media screen and (min-decive-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .section-products,
+  .section-opinions {
+    background-image: url("/images/Backgroud_mobile@2x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .hero {
+    height: 359px;
+    position: relative;
+  }
+  .hero img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 218px;
+    height: 267px;
+    margin: 0;
+    margin-left: auto;
+  }
+  .section-opinions .main-image {
+    width: 440px;
+    height: 204px;
+  }
+}

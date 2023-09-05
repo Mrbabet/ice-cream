@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/styles.css" />
+
+    <link rel="stylesheet" href="./css/mobile.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,30 +30,30 @@
   </head>
   <body>
     <header class="hero-header">
-      <div class="container">
-        <div class="logo">
-          <svg><use xlink:href="./icons.svg#icon-ice-crema"></use></svg>
-          <span class="logo-text">ce</span>
-        </div>
-        <button
-          class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <div class="bar"></div>
-        </button>
+      <div class="logo">
+        <svg><use xlink:href="./icons.svg#icon-ice-crema"></use></svg>
+        <span class="logo-text">ce</span>
       </div>
+      <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <div class="bar"></div>
+      </button>
     </header>
     <main>
       <section class="hero">
-        <div class="container">
-          <h1>ice cream made with <span>passion</span></h1>
-          <ul class="hero-usable">
-            <li><button class="products-button">Products</button></li>
-            <li><a class="hero-link" href="">How it's made?</a></li>
-          </ul>
-          <img src="./images/mobile.png" alt="" />
-        </div>
+        <h1>ice cream made with <span>passion</span></h1>
+        <ul class="hero-usable">
+          <li><button class="products-button">Products</button></li>
+          <li><a class="hero-link" href="./">How it's made?</a></li>
+        </ul>
+        <img
+          src="./images/mobile.png"
+          srcset="./images/mobile@2x.png 2x"
+          alt=""
+        />
       </section>
       <section class="section-products section">
         <div class="container">
@@ -58,7 +61,11 @@
           <ul class="products-container">
             <li class="product">
               <div class="image-mask"></div>
-              <img src="./images/ice-cream.png" alt="" />
+              <img
+                src="./images/ice-cream.png"
+                srcset="./images/ice-cream@2x.png 2x"
+                alt=""
+              />
 
               <h3>ice cream</h3>
               <p>
@@ -71,7 +78,11 @@
             </li>
             <li class="product">
               <div class="image-mask"></div>
-              <img src="./images/ice-coffee.png" alt="" />
+              <img
+                src="./images/ice-coffee.png"
+                srcset="./images/ice-coffee@2x.png 2x"
+                alt=""
+              />
 
               <h3>ice coffee</h3>
               <p>
@@ -85,7 +96,11 @@
             </li>
             <li class="product">
               <div class="image-mask"></div>
-              <img src="./images/milkshakes.png" alt="" />
+              <img
+                src="./images/milkshakes.png"
+                srcset="./images/milkshakes@2x.png 2x"
+                alt=""
+              />
               <h3>milkshakes</h3>
               <p>
                 Sweet drinks based on milk and ice cream, supplemented with
@@ -102,7 +117,11 @@
         <div class="container">
           <h2><span>tradition and love </span>how it’s made?</h2>
           <div class="image-mask">
-            <img src="./images/cow-mobile.png" alt="" />
+            <img
+              src="./images/cow-mobile.png"
+              srcset="./images/cow-mobile@2x.png 2x"
+              alt=""
+            />
           </div>
           <ul class="description-container">
             <li class="description">
@@ -124,7 +143,7 @@
               <p>This is enough to choose ice cream and coffee for any mood!</p>
             </li>
           </ul>
-          <button>Read more ></button>
+          <button>Read more</button>
           <ul class="statistics-container">
             <li class="stat">
               <div class="circle-mask">
@@ -151,12 +170,23 @@
         </div>
       </section>
       <section class="section-opinions section">
+        <h2 class="visually-hidden">Customer reviews</h2>
+        <img
+          class="main-image"
+          src="./images/ice-creams.jpg"
+          srcset="./images/ice-creams@2x.jpg 2x"
+          alt=""
+        />
         <div class="container">
           <ul class="opinions-container">
             <li>
-              <img class="main-image" src="./images/ice-creams.jpg" alt="" />
               <div class="opinion">
-                <img class="person-image" src="./images/opinion-1.jpg" alt="" />
+                <img
+                  class="person-image"
+                  src="./images/opinion-1.jpg"
+                  srcset=""
+                  alt=""
+                />
                 <div class="opinion-text-container">
                   <p class="opinion-text">
                     I love visiting your cafe. You prepare the most delicious
@@ -167,22 +197,8 @@
                 <p class="person-location">Emily, Los Angeles</p>
               </div>
             </li>
-            <li>
-              <!-- <img class="main-image" src="./images/ice-creams.jpg" alt="" /> -->
-              <img src="" alt="" />
-              <div>
-                <p></p>
-              </div>
-              <p></p>
-            </li>
-            <li>
-              <!-- <img class="main-image" src="./images/ice-creams.jpg" alt="" /> -->
-              <img src="" alt="" />
-              <div>
-                <p></p>
-              </div>
-              <p></p>
-            </li>
+            <li></li>
+            <li></li>
           </ul>
           <div class="slider-dots">
             <span class="dot dot-active"></span><span class="dot"></span
@@ -190,86 +206,108 @@
           </div>
         </div>
       </section>
+      <section class="section-contacts section">
+        <div class="container">
+          <h2 class="visually-hidden">Contacts</h2>
+          <ul class="address-container">
+            <li class="address">
+              <span class="title">Cafe</span>
+              <div class="address-location">
+                <p>Chicago</p>
+                <p>10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</p>
+              </div>
+              <div class="time">
+                <div>
+                  <p class="day">Monday - Friday</p>
+                  <p class="hours">06:00 AM - 10:00 PM</p>
+                </div>
+                <div>
+                  <p class="day">Saturday - Sunday</p>
+                  <p class="hours">08:00 AM - 16:00 PM</p>
+                </div>
+              </div>
+              <div class="tele-address">
+                <a href="tel:+61 (0) 383 766 284">+61(0) 383 766 284</a>
+                <a href="mailto:noreply@envato.com">noreply@envato.com</a>
+              </div>
+            </li>
+            <li class="address">
+              <span class="title">Cafe</span>
+              <div class="address-location">
+                <p>Chicago</p>
+                <p>10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</p>
+              </div>
+              <div class="time">
+                <div>
+                  <p class="day">Monday - Friday</p>
+                  <p class="hours">06:00 AM - 10:00 PM</p>
+                </div>
+                <div>
+                  <p class="day">Saturday - Sunday</p>
+                  <p class="hours">08:00 AM - 16:00 PM</p>
+                </div>
+              </div>
+              <div class="tele-address">
+                <a href="tel:+61 (0) 383 766 284">+61(0) 383 766 284</a>
+                <a href="mailto:noreply@envato.com">noreply@envato.com</a>
+              </div>
+            </li>
+            <li class="address">
+              <span class="title">Cafe</span>
+              <div class="address-location">
+                <p>Chicago</p>
+                <p>10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</p>
+              </div>
+              <div class="time">
+                <div>
+                  <p class="day">Monday - Friday</p>
+                  <p class="hours">06:00 AM - 10:00 PM</p>
+                </div>
+                <div>
+                  <p class="day">Saturday - Sunday</p>
+                  <p class="hours">08:00 AM - 16:00 PM</p>
+                </div>
+              </div>
+              <div class="tele-address">
+                <a href="tel:+61 (0) 383 766 284">+61(0) 383 766 284</a>
+                <a href="mailto:noreply@envato.com">noreply@envato.com</a>
+              </div>
+            </li>
+          </ul>
+          <button class="our-location-btn">Our Locations</button>
+          <button class="franchise-btn">Franchise</button>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="container">
-        <ul class="address-container">
-          <li class="address">
-            <span class="title">Cafe</span>
-            <div class="address-location">
-              <p>Chicago</p>
-              <p>10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</p>
-            </div>
-            <div class="time">
-              <div>
-                <p class="day">Monday - Friday</p>
-                <p class="hours">06:00 AM - 10:00 PM</p>
-              </div>
-              <div>
-                <p class="day">Saturday - Sunday</p>
-                <p class="hours">08:00 AM - 16:00 PM</p>
-              </div>
-            </div>
-            <div class="tele-address">
-              <a href="">+61(0) 383 766 284</a>
-              <a href="">noreply@envato.com</a>
-            </div>
-          </li>
-          <li class="address">
-            <span class="title">Cafe</span>
-            <div class="address-location">
-              <p>Chicago</p>
-              <p>10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</p>
-            </div>
-            <div class="time">
-              <div>
-                <p class="day">Monday - Friday</p>
-                <p class="hours">06:00 AM - 10:00 PM</p>
-              </div>
-              <div>
-                <p class="day">Saturday - Sunday</p>
-                <p class="hours">08:00 AM - 16:00 PM</p>
-              </div>
-            </div>
-            <div class="tele-address">
-              <a href="">+61(0) 383 766 284</a>
-              <a href="">noreply@envato.com</a>
-            </div>
-          </li>
-          <li class="address">
-            <span class="title">Cafe</span>
-            <div class="address-location">
-              <p>Chicago</p>
-              <p>10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</p>
-            </div>
-            <div class="time">
-              <div>
-                <p class="day">Monday - Friday</p>
-                <p class="hours">06:00 AM - 10:00 PM</p>
-              </div>
-              <div>
-                <p class="day">Saturday - Sunday</p>
-                <p class="hours">08:00 AM - 16:00 PM</p>
-              </div>
-            </div>
-            <div class="tele-address">
-              <a href="">+61(0) 383 766 284</a>
-              <a href="">noreply@envato.com</a>
-            </div>
-          </li>
-        </ul>
-        <button>Our Locations</button>
-        <button>Franchise</button>
-        <h2><span>homemade ice cream made</span>with passion</h2>
+        <span class="duplicated-title-span"> homemade ice cream made</span>
+        <p class="duplicated-title">with passion</p>
         <ul class="social-media">
-          <li class="circle git-hub"></li>
-          <li class="circle telegram"></li>
-          <li class="circle fb"></li>
+          <li class="circle github">
+            <a href="./">
+              <svg><use xlink:href="./icons.svg#icon-github"></use></svg
+            ></a>
+          </li>
+          <li class="circle telegram">
+            <a href="./">
+              <svg><use xlink:href="./icons.svg#icon-telegram"></use></svg
+            ></a>
+          </li>
+          <li class="circle fb">
+            <a href="./"
+              ><svg><use xlink:href="./icons.svg#icon-facebook"></use></svg
+            ></a>
+          </li>
         </ul>
-        <p>Feel free to contact +61 (0) 383 766 284</p>
-        <div class="copyright">
-          <p>© 2022 - IceCream. All Rights Reserved.</p>
-        </div>
+        <p class="contact-disclaimer">
+          Feel free to contact
+          <a href="tel:+61 (0) 383 766 284">+61 (0) 383 766 284</a>
+        </p>
+      </div>
+      <div class="copyright">
+        <p>© 2022 - IceCream.</p>
+        <p>All Rights Reserved.</p>
       </div>
     </footer>
   </body>
